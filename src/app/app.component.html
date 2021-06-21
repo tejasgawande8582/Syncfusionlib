@@ -1,0 +1,54 @@
+<!-- To render Button. -->
+<button ejs-button class="auto">Button</button>
+<br>
+
+<!-- To render DropDownButton. -->
+<button ejs-dropdownbutton [items]='items' content='Message' iconCss='ddb-icons e-message' class="auto"></button>
+<!-- To render DropDownButton with iconposition as 'top'. -->
+
+<br>
+<button ejs-dropdownbutton [items]='items' content='Message' iconCss='ddb-icons e-message' iconPosition='Top' class="auto"></button>
+
+<br>
+<ejs-autocomplete id='atcelement' [dataSource]='sportsData' class="auto"></ejs-autocomplete> 
+
+<br>
+<!-- To Render CheckBox. -->
+<ejs-checkbox label="Default" class="auto"></ejs-checkbox>
+
+<br>
+<ul>
+    <!-- checked state. -->
+    <li><ejs-checkbox label="Checked State" [checked]="true"></ejs-checkbox></li>
+
+    <!-- unchecked state. -->
+    <li><ejs-checkbox label="Unchecked State"></ejs-checkbox></li>
+
+    <!-- indeterminate state. -->
+    <li><ejs-checkbox label="Indeterminate State" [indeterminate]="true"></ejs-checkbox></li>
+    </ul>
+
+    <br>
+
+     <!-- To Render Calendar -->
+     <ejs-calendar>calender</ejs-calendar>
+
+     <br>
+       <!--Sets the value, min and max -->
+       <ejs-calendar [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-calendar>
+
+       <br>
+
+       <ul>
+        <!-- To Render RadioButton. -->
+        <li><ejs-radiobutton label="Option 1" name="default"></ejs-radiobutton></li>
+
+        <li><ejs-radiobutton label="Option 2" name="default" checked="true"></ejs-radiobutton></li>
+        </ul>
+         
+
+       <br>
+        <!-- To Render Switch. -->
+        <ejs-switch onLabel="ON" offLabel="OFF" [checked]="true"></ejs-switch> 
+
+
